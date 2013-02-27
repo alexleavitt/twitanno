@@ -1,0 +1,96 @@
+
+body {
+  font-family: sans-serif;
+/*   background-color: #121212; */
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 800px;
+  height: 100%;
+  background-color: rgba(255,255,255,0.9);
+/*   position: relative; */
+}
+
+h1 {
+  font-size: 20pt;
+/*   text-transform: uppercase; */
+/*
+  margin-bottom: 50px;
+  margin-top: 25px;
+*/
+  padding: 0px;
+}
+
+h2 {
+    font-style: bold;
+/*     text-decoration: underline; */
+/*     text-align: center;  */
+/*     margin-top: 25px; */
+}
+
+h3 {
+    font-style: bold;
+    text-decoration: underline;
+    text-align: center;   
+}
+
+p {
+  font-size: 12pt;
+}
+
+#profile {
+/*     width: 350px; */
+/*     float: left; */
+    border: 1px solid #bbb;
+    text-align: center;
+    padding: 10px;
+/*     height: 100%; */
+}
+
+#tweet {
+/*     width: 350px; */
+/*     float: right; */
+    border: 1px solid #bbb;
+    text-align: center;
+    padding: 10px;
+/*     height: 100%; */
+}
+
+#intro {
+    padding: 20px;
+    background-color: #ccc;
+    width: 800px;
+    text-align: center;
+}
+
+#annotation {
+/*     float: left; */
+    width: 800px;
+/*     border: 1px solid #bbb; */
+}
+
+#footer {
+    clear: both;
+    padding-top: 20px;
+}
+
+#smallblank {
+    margin: 20px;
+}
+
+#question {
+    font-weight: bold;
+}
+
+#MTcode {
+    font-size: 30pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+#stimulus {
+    font-size: 16pt;
+}

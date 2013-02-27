@@ -1,0 +1,134 @@
+<html>
+
+<head>  
+    <link href="/static/style.css" rel="stylesheet" type="text/css" /> 
+    <title="Annotation Tool">
+</head>
+
+
+
+<body>
+
+    <div id="smallblank"></div>
+
+    <div id="wrapper">
+    
+        <div id="intro">
+            <h1>AILSAIL Twitter Annotation Tool</h1>
+            
+            <p>{{ blob }}</p>
+            
+<!--             <p>Hello {{username}}, your session is {{sessionid}} and you have done {{count}} annotations.</p> -->
+            <p>Hello! You have <b>{{5-count}} annotations</b> left to complete.</b></p>
+        
+        </div>
+        
+        
+        <!--<form name="start"  method="get" action="{{next}}"> -->
+        <form name="start"  method="post" action="{{next}}">
+<!--           <input type="hidden" name="cmd" value="annotate" /> -->
+          
+          
+          <div id="smallblank"></div>
+          
+          <div id="annotation">
+              
+            <h2>Directions:</h2>  
+            <p id="question">In the first box below, there is a tweet that should mention a telecommunications company.</p>
+            <p>Read the tweet and look at the user's profile information (in the second box). Then answer the questions below.</p>
+
+<!--         <p id="error_message">error message: {{error_message}}</p> -->
+
+<!-- 	    <p id="stimulus">stimulus: {{stimulus}} </p> -->
+
+            
+        
+            <div id="tweet">
+<!--                 <h3>Random Tweet</h3> -->
+                <p id="stimulus"><i><!-- tweet: -->
+                {{ stimulus }}</i></p>
+                <input type="hidden" name="stimulus" value="{{stimulus}}"/>
+<!--
+                <p>created at:
+                {{ tweet_created_at }}</p>
+-->
+            </div>
+
+	    
+            
+	        <div id="smallblank"></div>
+            
+            <div id="profile">
+<!--                 <b>test: {{ testvar }}</b> -->
+<!--                 <h3>Random User Profile</h3> -->
+                <p><!-- username: --> 
+                {{ twusername }}</p>
+                <p><!-- user image: -->
+                <img src="{{ user_avatar_url }}"></p>
+                <p><!-- user bio: -->
+                {{ user_bio }}</p>
+            </div>
+            
+            <div id="smallblank"></div>
+            
+            
+            
+            <div id="questionsection">
+            
+<!--             <h3>Annotation Questions</h3> -->
+            
+            
+	    <!--             <div id="smallblank"></div>  -->
+            <h2>Questions:</h2>
+            <p id="question">Check this box if the tweet was misclassified and does not include any mention of a telecommunications company.</p>
+            <input type="checkbox" name="misclassification" value="yes" class="regular-checkbox big-checkbox" />
+            <label>Yes, this tweet was misclassified.</label>
+	    
+            
+	    <!--             <div id="smallblank"></div> -->
+            
+            <p id="question">Check this box if the tweet compared two (or more) telecommunications companies at the same time.</p>
+            <input type="checkbox" name="comparison" value="yes" class="regular-checkbox big-checkbox" />
+            <label>Yes, there is a comparison in this tweet.</label>
+            
+            
+	    <!--             <div id="smallblank"></div> -->
+            
+            <p id="question">Check this box if the tweet is not in English.</p>
+            <input type="checkbox" name="nonenglish" value="yes" class="regular-checkbox big-checkbox" />
+            <label>This tweet was not in English.</label>
+            </div>
+            
+            <div id="smallblank"></div>
+            
+            <p id="question">How would you best describe the tweet's mood as written by the author?</p>
+            
+            <input type="radio" name="sentiment" value="positive"/><label>Positive</label>
+            <br />
+            <input type="radio" name="sentiment" value="neutral"/><label>Negative</label> 
+            <br />
+            <input type="radio" name="sentiment" value="negative"/><label>Neutral</label> 
+            <br />
+            <input type="radio" name="sentiment" value="unsure" /><label>Unsure</label> 
+            <br />
+            
+            <div id="smallblank"></div>
+
+            <input type="submit" value="Continue" />
+            
+            
+            <div id="footer">
+	      
+            </div>
+	</form>
+	</div>
+	
+	<div id="smallblank"></div>
+	<div id="smallblank"></div>
+	<div id="smallblank"></div>
+	<div id="smallblank"></div>
+	<div id="smallblank"></div>
+	
+</body>
+
+</html>

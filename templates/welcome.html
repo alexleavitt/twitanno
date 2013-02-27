@@ -1,0 +1,52 @@
+<html
+<head>  
+    <link href="/static/style.css" rel="stylesheet" type="text/css" /> 
+    <title="Welcome">
+</head>
+  <body>
+    <div id="wrapper">
+    <div id="smallblank"></div>
+    <h1>Welcome</h1>
+    {{ blob }}
+    
+    <p> We are conducting a study about brand perception that is reflected in
+    discussion on Twitter. This study focuses in particular on a telecommunications
+    company, Orange, which is a branch of France Telecom.</p>
+
+    <p> You will be presented with a series of tweets, each followed by
+    several questions that aim to assess the relevance of the tweet and how it
+    reflects the Twitter user's sentiment. </p>
+
+    <p> <b>About us:</b> We are a research group at USC's <a href="http://annenberglab.org" target=_blank>AIL</a> and <a href="http://sail.usc.edu/" target=_blank>SAIL</a> labs, comprised of
+     social scientists and engineers.  We proudly support open data and research, including open source software
+    and public dissemination of our results. </p>
+
+    <p> <i><b>Note to Mechanical Turkers:</b> We verify the quality of the results using
+    randomly presented indicator stimuli.  However, we select Turkers with
+    high past acceptance, so in practice we reject very few HITs.</i></p>
+    
+<!--     <form name="start"  method="get" action="{{next}}"> -->
+    <form name="start"  method="post" action="{{next}}">
+
+
+      <input type="text"   name="age" id="age">
+      <label for="age">Age</label>
+      <br/>
+      <input type="text"   name="gender" id="gender">
+      <label for="gender">Gender</label>
+      <br/>
+      <input type="text"   name="nativeLanguage" id="nativeLanguage">
+      <label for="nativeLanguage">Native Language</label>
+      <br/>
+      <input type="text"   name="countryOfResidence" id="countryOfResidence">
+      <label for="countryOfResidence">Country of Residence</label>
+      <input type="hidden" name="cmd" value="login">
+      <br/>
+      <div id="smallblank"></div>
+      <input type="submit" value="Start" />
+    </form>
+    
+
+    </div>
+  </body>
+</html>

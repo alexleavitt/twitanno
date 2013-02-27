@@ -1,0 +1,24 @@
+<html>
+  <head>  
+      <link href="/static/style.css" rel="stylesheet" type="text/css" /> 
+    <title="logout">
+  </head>
+  <body>
+   <div id="wrapper">
+   <div id="smallblank"></div>
+    <h1> Goodbye </h1>
+    {{ blob }}
+
+    <p> Thank you for completing the annotation task.  If you completed this
+    task through Amazon Mechanical Turk, please copy and paste the following
+    completion code back into the Mechanical Turk HIT: </p>
+    <p id="MTcode"><b> {{sessionid}} </b></p>
+    <p> If you would like to annotate again, please click the restart button, below. </p>
+    <div id="smallblank"></div>
+    <form name="start"  method="get">
+      <input type="hidden" name="cmd" value="restart">
+      <input type="submit" value="restart" />
+    </form>
+   </div>
+  </body>
+</html>
